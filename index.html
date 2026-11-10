@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GridSensei Portfolio</title>
+    <!-- Google Fonts for premium look -->
+    <link relmeta="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* CSS Settings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f3ea; /* Light cream Canva background color */
+            color: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+            padding: 20px;
+        }
+
+        /* Container styling */
+        .container {
+            text-align: center;
+            max-width: 800px;
+            width: 100%;
+            z-index: 2;
+            padding: 40px 20px;
+        }
+
+        /* Typography */
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 500;
+            line-height: 1.2;
+            margin-bottom: 10px;
+        }
+
+        .brand-name {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(3rem, 8vw, 5.5rem);
+            font-weight: 700;
+            font-style: normal;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 25px;
+        }
+
+        /* The decorative line under GridSensei */
+        .brand-name::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 5%;
+            width: 90%;
+            height: 3px;
+            background-color: #000;
+        }
+
+        /* Small squares on the underline ends */
+        .brand-name::before {
+            content: '■';
+            position: absolute;
+            bottom: -13px;
+            left: 5%;
+            font-size: 14px;
+        }
+        
+        .brand-name-dot::after {
+            content: '■';
+            position: absolute;
+            bottom: -13px;
+            right: 5%;
+            font-size: 14px;
+        }
+
+        p {
+            font-size: clamp(1rem, 2.5vw, 1.35rem);
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 35px;
+            font-weight: 400;
+        }
+
+        /* Gradient Button styling */
+        .cta-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #8a2be2, #ba55d3); /* Purple gradient from image */
+            color: #fff;
+            text-decoration: none;
+            padding: 16px 55px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(138, 43, 226, 0.3);
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(138, 43, 226, 0.5);
+            background: linear-gradient(135deg, #7b1fa2, #ab47bc);
+        }
+
+        /* Simple placeholders for corner vector leaves/flowers from Canva image */
+        .decor {
+            position: absolute;
+            pointer-events: none;
+            opacity: 0.15; /* Subtly integrated */
+            font-size: 8rem;
+            z-index: 1;
+        }
+        .top-left { top: 20px; left: 20px; }
+        .top-right { top: 20px; right: 20px; }
+        .bottom-right { bottom: 20px; right: 20px; }
+
+        /* Responsive Fixes */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px 10px;
+            }
+            .cta-btn {
+                width: 100%;
+                padding: 15px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Simple visual anchors replacing the flowers from your image layout -->
+    <div class="decor top-left">🌿</div>
+    <div class="decor top-right">🌸</div>
+    <div class="decor bottom-right">🪷</div>
+
+    <div class="container">
+        <h1>Hello, I am</h1>
+        <div class="brand-name">GridSensei!<span class="brand-name-dot"></span></div>
+        <p>I have a collection of useful and Fun Websites<br>Wanna Check it out?</p>
+        
+        <!-- Aap '#' ki jagah apni kisi bhi website ya page ka link dal sakte hain -->
+        <a href="#" class="cta-btn">Here!</a>
+    </div>
+
+</body>
+</html>
